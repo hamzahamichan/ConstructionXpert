@@ -8,12 +8,12 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/t")
+@RequestMapping("/api/taches")
 public class ControllerTache {
     @Autowired
     private ITacheser iTacheser;
 
-    @PostMapping(value = "/ajouter/tache", consumes = "application/json")
+    @PostMapping("/ajouter")
     public Tache createTache(@RequestBody Tache tache) {
         return this.iTacheser.createTache(tache);
     }
