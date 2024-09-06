@@ -14,6 +14,7 @@
         <option value="$PROJECT_DIR$/xprojetService/pom.xml" />
         <option value="$PROJECT_DIR$/../tacheServices/pom.xml" />
         <option value="$PROJECT_DIR$/tacheServices/pom.xml" />
+        <option value="$PROJECT_DIR$/securityservice/pom.xml" />
       </list>
     </option>
   </component>

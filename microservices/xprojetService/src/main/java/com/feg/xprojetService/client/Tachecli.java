@@ -11,5 +11,5 @@ import java.util.List;
 public interface Tachecli {
 
     @GetMapping("/projet/{id}")
-    List<Tache> recupérerTachesProjet(@PathVariable Long projetId);
+    List<Tache> findAllTachesByProjet(@PathVariable Long id);
 }

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -9,6 +10,7 @@
         <module name="xprojetService" />
         <module name="discovry" />
         <module name="tacheServices" />
+        <module name="securityservice" />
         <module name="configServer" />
         <module name="apiGetway" />
       </profile>
@@ -19,6 +21,7 @@
       <module name="apiGetway" options="-parameters" />
       <module name="configServer" options="-parameters" />
       <module name="discovry" options="-parameters" />
+      <module name="securityservice" options="-parameters" />
       <module name="tacheServices" options="-parameters" />
       <module name="xprojetService" options="-parameters" />
     </option>

@@ -11,14 +11,14 @@ import java.util.Date;
 @Data @Builder
 
 public class Projetdto {
-    private Long projetId;
+    private Long id;
     private String name;
     private Date date_debut;
     private Date date_fin;
     private Double budget;
     public  static Projetdto toDto(Projet p){
         return Projetdto.builder()
-                .projetId(p.getProjetId())
+                .id(p.getId())
                 .name(p.getName())
                 .date_debut(p.getDate_debut())
                 .date_fin(p.getDate_fin())

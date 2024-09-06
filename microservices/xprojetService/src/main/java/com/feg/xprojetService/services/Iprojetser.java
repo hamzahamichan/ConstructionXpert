@@ -8,6 +8,5 @@ import java.util.List;
 public interface Iprojetser {
      Projet addProjet(Projet projet);
      List<Projet> getAllprojet();
-     Allprojets getAllprojetTache(Long projetId);
-
+     Allprojets getAllprojetTache(Long id);
 }

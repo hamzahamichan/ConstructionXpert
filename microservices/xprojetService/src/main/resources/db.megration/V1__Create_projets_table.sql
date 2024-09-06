@@ -1,8 +1,8 @@
-CREATE TABLE projets (
+CREATE TABLE projet (
                          projetId SERIAL PRIMARY KEY,
-                         nom VARCHAR(255) ,
-                         description VARCHAR(255),
-                         date_debut DATE,
+                         name VARCHAR(255) ,
+                         date_debut VARCHAR(255),
+                         dateDebut DATE,
                          date_fin DATE,
                          budget DOUBLE
 );

@@ -1,0 +1,31 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: gatewayService
+  cloud:
+    gateway:
+      routes:
+        - id: tache-service-route
+          uri: lb://tacheservices
+          predicates:
+            - Path=/api/taches/**
+        - id: projet-service-route
+          uri: lb://xprojetservice
+          predicates:
+            - Path=/p/projet/**
+    discovery:
+      locator:
+        enabled: true
+        lower-case-service-id: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+logging:
+  level:
+    org.springframework.cloud.gateway: DEBUG
+    org.springframework.cloud.netflix.eureka: DEBUG

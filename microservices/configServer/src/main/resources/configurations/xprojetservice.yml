@@ -1,3 +1,6 @@
+server:
+  port: 9090
+
 spring:
   application:
     name: xprojetService
@@ -14,20 +17,12 @@ spring:
   flyway:
     locations: classpath:db/migration
     baseline-on-migrate: true
-
   config:
     import: optional:configserver:http://localhost:8888
 
-server:
-  port: 9090
-
 eureka:
-  instance:
-    hostname: localhost
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka
-
-application:
-  config:
-    taches-url: http://localhost:9070/api/taches
+  instance:
+    hostname: localhost
